@@ -13,10 +13,14 @@
 
 class User
 {
+    public string login;
+    public string pass;
     public static LoginArray loginArray = new LoginArray();
     public static PassArray passArray= new PassArray();
     public User(string login, string pass)
     {
+        this.login = login;
+        this.pass = pass;
         loginArray.add(login);
         passArray.add(pass);
     }
